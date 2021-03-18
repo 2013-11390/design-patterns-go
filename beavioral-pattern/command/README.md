@@ -25,11 +25,14 @@ GUI 와 비즈니스 로직을 분리한다. GUI레이어는 렌더링 관련해
 3. Sender 역할을 할 classes들을 정의한다. Sender들은 Commands와 오직 command interface를 통해 통신한다. 
 
 ## Pros and Cons
-Pros
-- Single Responsibility Principle
-- Open/Closed Principle
-- Can implement undo/redo
-- Can implement deferred execution of operations
-- Assemble a set of simple commands into a complex one.
-Cons
-- Code may be more complicated
+- Pros
+  - Single Responsibility Principle
+  - Open/Closed Principle
+  - Can implement undo/redo
+  - Can implement deferred execution of operations
+  - Assemble a set of simple commands into a complex one.
+- Cons
+  - Code may be more complicated
+
+## Code
+go run *.go
