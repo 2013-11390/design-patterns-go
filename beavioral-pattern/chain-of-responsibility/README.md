@@ -30,3 +30,6 @@ Chain of Responsibility는 handler가 각각의 역할을 실행한다. 각 hand
   - Open/Closed Principle. 새로운 핸들러를 앱에 쉽게 추가할 수 있다.
 - Cons  
   - 몇 리퀘스트들을 unhandled된 채로 처리될 수 있다.
+
+## Code
+```go run *.go```

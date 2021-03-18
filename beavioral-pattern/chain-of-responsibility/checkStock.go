@@ -2,11 +2,11 @@ package main
 
 import "fmt"
 
-type auth struct {
+type checkStock struct {
 	next transactionHandler
 }
 
-func (d *auth) execute(r *transactionRequest) {
+func (d *checkStock) execute(r *transactionRequest) {
 	if r.checkStockDone {
 		fmt.Println("CheckStock already Done")
 		d.next.execute(r)
@@ -17,6 +17,6 @@ func (d *auth) execute(r *transactionRequest) {
 	d.next.execute(r)
 }
 
-func (d *auth) setNext(next transactionHandler) {
+func (d *checkStock) setNext(next transactionHandler) {
 	d.next = next
 }
